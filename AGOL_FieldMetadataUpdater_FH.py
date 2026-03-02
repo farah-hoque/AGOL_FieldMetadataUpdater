@@ -102,16 +102,16 @@ def createLookupTable(gis, itemID, lookupTablepath, file_name):
 
             # Write the field information to the rows list
             rows.append({
-            "field": field.get("name"),
-            "alias": field.get("alias") if field.get("alias") else "",
-            "description": description,
-            "type": '' if field.get("name") in ('Shape__Area', 'Shape__Length', 'SHAPE__Area', 'SHAPE__Length', 'OBJECTID', 'FID') else getValueType
+            "Field": field.get("name"),
+            "Alias": field.get("alias") if field.get("alias") else "",
+            "Description": description,
+            "ValueType": '' if field.get("name") in ('Shape__Area', 'Shape__Length', 'SHAPE__Area', 'SHAPE__Length', 'OBJECTID', 'FID') else getValueType
             })
 
         print('>>> Extracting field information: {}'.format(rows))
 
         # Populate an empty DataFrame with the layer's field informaton in the rows list
-        df = pd.DataFrame(rows, columns=['field', 'alias', 'description', 'type'])
+        df = pd.DataFrame(rows, columns=['Field', 'Alias', 'Description', 'ValueType'])
 
         # Save the dataframe under the appropriate sheet name
         df.to_excel(writer, sheet_name=sheet_name, index=False)
