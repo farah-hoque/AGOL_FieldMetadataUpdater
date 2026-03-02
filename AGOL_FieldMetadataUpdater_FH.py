@@ -180,7 +180,7 @@ def updateitemAGOL(lookupTablepath, file_name, itemID, gis):
                             # Modifies description to exclude special characters, new lines, tabs, and quotations
                             if description_original != "":
                                 description_original = description_original.replace('\\n', ' ').replace('\\t', ' ')
-                                # Removes everything except letters, numbers, and spaces
+                                # Removes everything except letters, numbers, commas, spaces and periods.
                                 description = re.sub(r'[^A-Za-z0-9 ,.]+', '', description_original)
                                 # Collapse multiple spaces
                                 description = re.sub(r'\s+', ' ', description).strip()
