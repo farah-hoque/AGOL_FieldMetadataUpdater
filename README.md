@@ -1,6 +1,6 @@
 <img width="698" height="109" alt="image" src="https://github.com/user-attachments/assets/e18d3700-729a-4b5a-a073-3ab09ec939fc" />
 
-# ArcGIS Online (AGOL) Field Information Updater
+# ArcGIS Online (AGOL) Field Metadata Updater
 
 ## Overview
 This script streamlines the process of updating a feature service's field metadata (alias/description/value type) on ArcGIS Online (AGOL) thereby eliminating the need for manual entry using AGOL's interface. For this script to run successfully, it is recommended that you already have field metadata information ready for your service. This script was inspired by Lisa Berry's Hosted Feature Service Alias Updater script:https://github.com/lisaberrygis/AliasUpdater/tree/main. 
@@ -19,7 +19,7 @@ The AGOL Field Information Updater has 2 main functions:
 2. **Updates** the service on ArcGIS Online using the lookup table.
 
 ## Instructions
-Download the AGOL_FieldInformationUpdater_FH.py script and run it using any python IDEs (i.e., PyCharm, Visual Studio Code) that is configured with ArcGIS Pro.
+Download the AGOL_FieldMetadataUpdater_FH.py script and run it using any python IDEs (i.e., PyCharm, Visual Studio Code) that is configured with ArcGIS Pro.
 
 ## Requirements
 - You must have ArcGIS Pro installed on your computer
