@@ -6,7 +6,7 @@
 ## Overview
 This script streamlines the process of updating a feature service's field metadata (alias/description/value type (see resource on field value types: https://doc.arcgis.com/en/arcgis-online/manage-data/describe-fields.htm#ATTFIELD_VALUETYPES) on ArcGIS Online (AGOL) thereby eliminating the need for manual entry using AGOL's interface. For this script to run successfully, it is recommended that you already have field metadata information ready for your service. This script was inspired by Lisa Berry's Hosted Feature Service Alias Updater script: https://github.com/lisaberrygis/AliasUpdater/. 
 
-Created by: Farah Hoque, Esri Canada (2026)
+Created by: Farah Hoque, Esri Canada (2026). For comments regarding this tool, please contact fhoque@esri.ca
 
 ## Why was this script created?
 This script was created as a way to quickly update field metadata of feature services with multiple layers and many fields (30+) which would be cumbersome to do manually through AGOL's interface. The saved lookup table can also be used to recover a service's field metadata after it gets wiped out during an overwrite.  
