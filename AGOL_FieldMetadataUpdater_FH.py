@@ -48,7 +48,7 @@ def createLookupTable(gis, itemID, lookupTablepath, file_name):
 
         # Integer types
         elif esri_type in ("esriFieldTypeBigInteger", "esriFieldTypeInteger", "esriFieldTypeSmallInteger"):
-            backend_types = ["countOrAmount", "orderedOrRanked", "binary", "uniqueIdentifier"]
+            backend_types = ["countOrAmount", "orderedOrRanked", "measurement", "binary", "uniqueIdentifier"]
             return 'Choose a value type from this list: ' + ', '.join(backend_types)
 
         # Float types
